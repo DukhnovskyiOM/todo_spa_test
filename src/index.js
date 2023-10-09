@@ -11,15 +11,18 @@ import store from "./redux/store";
 const router = createBrowserRouter(
   [
     {
-      path: "/todo_spa_test/",
+      path: "/",
       element: <App />,
       errorElement: <ErrorPage />,
     },
     {
-      path: "/todo_spa_test/todo",
+      path: "/todo",
       element: <TodoPage />,
     },
-  ]
+  ],
+  {
+    basename: "/todo_spa_test",
+  }
 );
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
