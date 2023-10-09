@@ -1,6 +1,6 @@
 # todo_spa_test
 
-[DEMO](https://github.com/facebook/create-react-app).
+[DEMO](https://dukhnovskyiom.github.io/todo_spa_test/).
 
 <img src='./src/img/projects/01.png' width='600'>
 
