@@ -27,7 +27,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <HashRouter basename="/todo_spa_test">
+      <HashRouter>
         <Route exact path="/" component={<App />} />
         <Route path="/todo" component={<TodoPage />} />
         <Route path="*" component={<ErrorPage />} />
