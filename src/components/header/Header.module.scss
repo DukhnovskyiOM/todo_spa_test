@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400;500;600;700&display=swap");
+
+header {
+  display: flex;
+  min-height: 70px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10px;
+  overflow: hidden;
+
+  @media screen and (max-width: 650px) {
+    position: relative;
+    justify-content: space-around;
+    padding: 0px;
+  }
+
+  ul {
+    @media screen and (max-width: 650px) {
+      position: fixed;
+      top: 0px;
+      left: -100%;
+      padding: 15px;
+      display: flex;
+      width: 100%;
+      height: fit-content;
+      flex-direction: column;
+      gap: 20px;
+      background-color: white;
+      z-index: 1000;
+      transition: 1s linear;
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+
+    .toggle {
+      display: flex;
+      left: 0px;
+    }
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+
+    span {
+      background: black;
+      color: white;
+      padding: 5px;
+      height: fit-content;
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    }
+  }
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 15px;
+  margin-right: 15px;
+  font-size: 22px;
+}
+
+.button {
+  background: linear-gradient(96deg, #da8023 0%, #e2b438 100%);
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  color: #191411;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 8px;
+  text-align: center;
+
+  &:hover {
+    background: linear-gradient(96deg, #ac6115 0%, #9e7a19 100%);
+    color: white;
+  }
+}
+
+.search_block {
+  border: 1px solid #f3f3f3;
+  border-radius: 10px;
+  position: relative;
+
+  input {
+    border: 0;
+    padding: 13px;
+    width: 200px;
+    outline: none;
+  }
+
+  .result {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    background-color: grey;
+    width: 250px;
+    min-height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: -25px;
+    margin-top: 3px;
+    z-index: 1002;
+    gap: 4px;
+
+    p {
+      font-size: 15px;
+      color: white;
+      font-weight: 600;
+      word-break: break-all;
+      border-bottom: 1px dotted white;
+      cursor: pointer;
+    }
+  }
+}
+
+.none {
+  display: none;
+}

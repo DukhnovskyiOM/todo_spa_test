@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+# todo_spa_test
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[DEMO](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+<img src='./src/img/projects/01.png' width='600'>
 
-In the project directory, you can run:
+# Тестовое задание Front-End
 
-### `npm start`
+Описание тестового задания на позицию Junior Front-End-разработчика в Uptrader для проверки ваших знаний React.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Задача
 
-### `npm test`
+Создать SPA TODO-приложение с использованием React и Redux.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Во Frontend части вашего приложения разрешается использовать ТОЛЬКО!!!:
 
-### `npm run build`
+- Create-react-app и все библиотеки с ним связанные
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- react-router-dom
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- axios и Redux-saga (По желанию)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- typescript или prop-types будет плюсом
 
-### `npm run eject`
+- react-helmet
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- redux\react-redux
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- sass и\или styled-jsx, classnames
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- babel\eslint\prettier
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Любая библиотека для drag-n-drop
 
-## Learn More
+- Любая библиотека для удобной работы с текстом(например tinymce)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Любая библиотека для работы с файлами
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Любая библиотека для работы со временем
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Требования задачи
 
-### Analyzing the Bundle Size
+- Ваш проект должен содержать 2 страницы
+    - Страница с выбором проекта
+    - Страница с задачами
+    
+- Все остальные действия должны происходить в модальных окнах
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Страница с задачами должна содержать в себе три колонки c возможностью изменения статуса с помощью drag-n-drop:
+    - Queue
+    - Development
+    - Done
 
-### Making a Progressive Web App
+- Каждая задача имеет:
+    - Номер задачи
+    - Заголовок
+    - Описание
+    - Дата создания
+    - Время в работе
+    - Дата окончания
+    - Приоритет
+    - Вложенные файлы
+    - Текущий статус
+    - Возможность добавлять подзадачи;
+    - Система каскадных комментариев(т.е. Можно оставить комментарий под коментарием под комментарием...
+      Пример можно увидеть на reddit или picabu)
+      
+- Возможность редактирования задачи
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Даже если все подзадачи выполнены, это не значит, что и основная становится выполненной
+      
+- Поиск по номеру задачи и заголовку
 
-### Advanced Configuration
+- Возможность создавать задачу
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Адаптация под мобильные устройства
 
-### Deployment
+- Обилие плавных, красивых анимаций\отзывчивость сайта на действия юзера\ Дополнительный функционал только приветствуются
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Приложение должно сохранять все данные после перезагрузки страницы есть 2 варианта
+    - Можете написать свой backend или использовать облачные решения, в таком случае допускается использование только `Redux-saga`
+    - Или можете использовать cookie и localStorage для сохранения всех данных
 
-### `npm run build` fails to minify
+- Когда закончите обязательно разверните приложение на любимом хостинге
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## FAQ
+ - Redux toolkit запрещен. Во фронтенд части вашего приложения можно использовать только разрешенные библиотеки! 
+
+ - Дизайн вы выполняете на свой вкус, мы вам доверяем;
+
+ - Пункт с сохранением данных обновлен. Если вы хотите написать свой backend или воспользоваться облачными решениями. Вы можете, но для взаимодействия с ними разрешается использовать только `Redux-saga` и `axios`

@@ -1,0 +1,75 @@
+.wrap__right {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+
+  h1 {
+    padding: 15px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 15px 0;
+
+    label {
+      font-size: small;
+      height: 40px;
+      border-bottom: 1px solid #87e74f;
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
+      padding-left: 5px;
+      color: grey;
+
+      select {
+        border: none;
+        position: relative;
+        outline: none;
+        width: 220px;
+      }
+
+      textarea {
+        border: none;
+        outline: none;
+        width: 220px;
+        max-width: 220px;
+        padding-left: 5px;
+        margin: 5px 0;
+        font-size: small;
+        font-family: "Roboto", sans-serif;
+        resize: inherit;
+        height: 35px;
+      }
+
+      input {
+        width: 220px;
+        height: inherit;
+        padding: 5px;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        font-family: helvetica;
+      }
+    }
+    button {
+      color: white;
+      font-size: 18px;
+      background-color: rgb(104, 105, 105);
+      cursor: pointer;
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 10px;
+      text-transform: uppercase;
+
+      &:hover {
+        color: #87e74f;
+      }
+    }
+  }
+}

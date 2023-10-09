@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+	margin: 0px;
+	border: none;
+
+  ul {
+    list-style: none;
+
+    li {
+      list-style: none;
+    }
+  }
+
+  img {
+    vertical-align: top;
+  }
+}
+
+body {
+  margin: 0;
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+  
+}

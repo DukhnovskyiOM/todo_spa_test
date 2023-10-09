@@ -1,0 +1,40 @@
+.comments_input {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+
+  h1 {
+    padding: 15px;
+  }
+
+  form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 15px;
+    button {
+      padding: 10px 15px;
+      color: white;
+      border-radius: 10px;
+      background-color: #57b9ff;
+      text-transform: uppercase;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    textarea {
+      font-family: "Roboto", sans-serif;
+      width: 100%;
+      height: 200px;
+      border: none;
+      outline: none;
+      color: #2f2d52;
+      font-size: 18px;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+export const LOCAL_REF = "LOCAL_REF";
+export const TASK_ADD = "TASK_ADD";
+export const TASK_TOGGLE = "TASK_TOGGLE";
+export const TASK_MINI_TOGGLE = "TASK_MINI_TOGGLE";
+export const TASK_REMOVE = "TASK_REMOVE";
+export const STATE_REFRESH_TASK = "STATE_REFRESH_TASK";
+export const TASK_REMOVE_MINI = "TASK_REMOVE_MINI";
+export const TASK_REMOVE_FILE = "TASK_REMOVE_FILE";
+export const TASK_REMOVE_COMMENT = "TASK_REMOVE_COMMENT";
+export const TASK_REFRESH = "TASK_REFRESH";
+export const TASK_ADD_MINI = "TASK_ADD_MINI";
+export const TASK_ADD_FILE = "TASK_ADD_FILE";
+export const TASK_ADD_COMMENT = "TASK_ADD_COMMENT";
