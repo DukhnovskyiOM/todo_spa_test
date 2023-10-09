@@ -10,12 +10,12 @@ import store from "./redux/store";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/todo_spa_test",
     element: <App />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "todo",
+    path: "/todo_spa_test/todo",
     element: <TodoPage />,
   },
 ]);
