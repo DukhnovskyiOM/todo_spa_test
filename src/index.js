@@ -21,7 +21,7 @@ const router = createBrowserRouter(
     },
   ],
   {
-    basename: "/todo_spa_test",
+    basename: "/todo_spa_test/",
   }
 );
 
